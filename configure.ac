@@ -1152,7 +1152,10 @@ case "${target}" in
   nvptx*-*-*)
     noconfigdirs="$noconfigdirs target-libssp target-libstdc++-v3 target-libobjc"
     ;;
-  sh-*-*)
+  or1k*-*-*)
+    noconfigdirs="$noconfigdirs gdb"
+    ;;
+  sh*-*-*)
     case "${target}" in
       sh*-*-elf)
          ;;
